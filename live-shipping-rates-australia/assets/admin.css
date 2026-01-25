@@ -1,0 +1,364 @@
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes rotate {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#live-shipping-rates-australia-company-settings,
+#live-shipping-rates-australia-shipping-settings {
+	--primary_color: #4c2dc1;
+	--warning_color: #bb2222;
+}
+
+.live-shipping-rates-australia-loading-indicator {
+	display: inline-block;
+	position: relative;
+	width: 18px;
+	margin-top: 6px;
+	margin-left: 8px;
+	aspect-ratio: 1 / 1;
+}
+
+.live-shipping-rates-australia-loading-indicator:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	margin-top: -10px;
+	margin-left: -10px;
+	aspect-ratio: 1 / 1;
+	border-radius: 100px;
+	animation-name: rotate;
+	animation-duration: 1000ms;
+	border: 2px solid #626262;
+	border-top-color: #d7d5d5;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	z-index: 5;
+	box-sizing: border-box;
+}
+
+#live-shipping-rates-australia-company-settings {
+	padding-top: 30px;
+}
+
+#live-shipping-rates-australia-company-settings [type="text"] {
+	width: 400px;
+}
+
+#live-shipping-rates-australia-company-settings input+select {
+	margin-left: 4px;
+}
+
+#live-shipping-rates-australia-company-settings select {
+	vertical-align: top;
+	line-height: normal !important;
+}
+
+#live-shipping-rates-australia-company-settings .width-auto {
+	width: auto !important;
+}
+
+#live-shipping-rates-australia-company-settings .field-type-number {
+	width: 70px;
+	text-align: center;
+}
+
+#live-shipping-rates-australia-company-settings .missing-shipping-method-notice {
+	color: #bf0000;
+	max-width: 800px;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#live-shipping-rates-australia-company-settings .field-note {
+	color: #646970;
+	flex: 0 0 100%;
+	margin-top: 3px;
+}
+
+#live-shipping-rates-australia-company-settings .lock-field-input {
+	display: inline;
+	position: relative;
+	margin-right: 4px;
+}
+
+#live-shipping-rates-australia-company-settings .lock-field-input:before {
+	content: "\f160";
+	font-family: dashicons;
+	font-size: 20px;
+	position: absolute;
+	inset: 0;
+	line-height: 18px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#live-shipping-rates-australia-company-settings .live-shipping-rates-australia-api-result {
+	color: green;
+	margin-top: 4px;
+}
+
+#live-shipping-rates-australia-company-settings .live-shipping-rates-australia-api-result:empty {
+	display: none !important;
+}
+
+#live-shipping-rates-australia-company-settings .live-shipping-rates-australia-api-error {
+	color: var(--warning_color);
+}
+
+#live-shipping-rates-australia-company-settings .connection-status {
+	--color: var(--warning_color);
+	color: var(--color);
+	display: inline-flex;
+	column-gap: 5px;
+	font-weight: bold;
+	align-items: center;
+	margin-top: 3px;
+}
+
+#live-shipping-rates-australia-company-settings .connection-status:before {
+	content: "";
+	width: 12px;
+	aspect-ratio: 1 / 1;
+	border-radius: 100px;
+	display: inline-block;
+	background-color: var(--color);
+}
+
+#live-shipping-rates-australia-company-settings .connection-status.connection-status-connected {
+	--color: green;
+}
+
+#live-shipping-rates-australia-company-settings .dimension-field-group {
+	display: flex;
+	gap: 5px;
+}
+
+#live-shipping-rates-australia-company-settings .currency-mismatch-warning {
+	color: var(--warning_color);
+	margin-top: 10px;
+}
+
+dl.live-shipping-rates-australia-error-item {
+	margin: 0;
+	font-size: 13px;
+}
+
+dl.live-shipping-rates-australia-error-item dt,
+dl.live-shipping-rates-australia-error-item dd {
+	margin-bottom: 4px;
+}
+
+dl.live-shipping-rates-australia-error-item dt {
+	font-weight: bold;
+	float: left;
+	margin-right: 3px;
+
+}
+
+dl.live-shipping-rates-australia-error-item dt:after {
+	content: ":";
+}
+
+dl.live-shipping-rates-australia-error-item dd {
+	clear: right;
+}
+
+#live-shipping-rates-australia-shipping-settings .field-note {
+	color: #747474;
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+#live-shipping-rates-australia-company-settings .field-note.field-note-warning,
+#live-shipping-rates-australia-shipping-settings .field-note.field-note-warning {
+	color: var(--warning_color);
+}
+
+#live-shipping-rates-australia-shipping-settings .switch-input-field {
+	overflow: hidden;
+	display: inline-flex;
+	border-radius: 100px;
+	border: 1px solid #8c8f94;
+}
+
+#live-shipping-rates-australia-shipping-settings .switch-input-field input {
+	display: none;
+}
+
+#live-shipping-rates-australia-shipping-settings .switch-input-field span {
+	padding: 2px 9px;
+	background-color: #fff;
+	background-color: #fff;
+}
+
+#live-shipping-rates-australia-shipping-settings .switch-input-field input:not(:checked)+span+span {
+	background-color: #8c8f94;
+}
+
+#live-shipping-rates-australia-shipping-settings .switch-input-field input:checked+span {
+	color: #fff;
+	background-color: var(--primary_color);
+}
+
+table.live-shipping-rates-australia-shipping-service-table {
+	max-width: 1000px;
+	border-collapse: collapse;
+	border: 1px solid #b1b1b1;
+	background-color: #fff;
+}
+
+table.live-shipping-rates-australia-shipping-service-table :is(th, td) {
+	padding: 12px;
+	border: none;
+}
+
+table.live-shipping-rates-australia-shipping-service-table .icon-move {
+	width: 1%;
+	cursor: move;
+	min-width: 20px;
+}
+
+table.live-shipping-rates-australia-shipping-service-table .icon-move:after {
+	content: "\f228";
+	font-size: 18px;
+	font-family: dashicons;
+}
+
+table.live-shipping-rates-australia-shipping-service-table thead th {
+	border-bottom: 1px solid #b1b1b1;
+}
+
+table.live-shipping-rates-australia-shipping-service-table tfoot th {
+	border-top: 1px solid #b1b1b1;
+}
+
+table.live-shipping-rates-australia-shipping-service-table tbody td {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+table.live-shipping-rates-australia-shipping-service-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+table.live-shipping-rates-australia-shipping-service-table .column-code {
+	width: 1%;
+	white-space: nowrap;
+}
+
+table.live-shipping-rates-australia-shipping-service-table td.column-code {
+	font-size: 11px;
+}
+
+table.live-shipping-rates-australia-shipping-service-table .column-enabled {
+	width: 1%;
+	min-width: 20px;
+	text-align: center;
+}
+
+table.live-shipping-rates-australia-shipping-service-table input[type="text"] {
+	width: 100% !important;
+}
+
+table.live-shipping-rates-australia-shipping-service-table textarea {
+	width: 100% !important;
+	margin-top: 2px !important;
+}
+
+#live-shipping-rates-australia-order-metabox .meta-info {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#live-shipping-rates-australia-order-metabox .meta-info small {
+	font-size: 12px;
+	display: block;
+	line-height: 1;
+	font-weight: normal;
+}
+
+#live-shipping-rates-australia-order-metabox .other-company-notice {
+	color: #b30000;
+	font-size: 14px;
+}
+
+#live-shipping-rates-australia-order-metabox .meta-box-title {
+	font-size: 16px;
+	margin-bottom: 3px;
+	line-height: 1.1;
+}
+
+#live-shipping-rates-australia-order-metabox .meta-box-title.meta-box-title-bordered {
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+#live-shipping-rates-australia-order-metabox .shipping-rate-data-title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 1px 0;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data {
+	margin-top: 0;
+	font-size: 12px;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data :is(dt, dd) {
+	margin: 0 0 3px 0;
+	float: left;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data dt {
+	font-weight: bold;
+	clear: left;
+	margin-inline-end: 4px;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data dt:after {
+	content: ":";
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data dd {
+	clear: right;
+	user-select: all;
+}
+
+#live-shipping-rates-australia-order-metabox dl.shipping-rate-data dd.line-item-container {
+	user-select: auto;
+}
